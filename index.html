@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AssemblyNest</title>
+    <link href="main.css" type="text/css" rel="stylesheet" />
+
 </head>
-<body>
-    <h1>
-        Welcome to AssemblyNest
-    </h1>
-    <h2>... site under construction</h2>
+<body onload="typeWriter()">
+    <div class="bgimg">
+        <div class="topleft">
+          <p>AssemblyNest</p>
+        </div>
+        <div class="middle">
+            <h3 id="typewriter"></h3>
+          <hr>
+          <p id="timeCountdown"></p>
+        </div>
+        <div class="bottomleft">
+          <h6>AssemblyNest &copy; 2019</h6>
+        </div>
+      </div>
+      
+      <script src="main.js"></script>
 </body>
 </html>
