@@ -1,6 +1,13 @@
 main {
     background: gray;
 }
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
 
 .an-navbar {
     background-color: rgba(255, 255, 255, 0.1);
