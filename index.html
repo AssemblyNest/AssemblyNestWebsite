@@ -273,22 +273,28 @@
                 <h1>Contact</h1>
                 <hr id="thinLine">
 
-                <div class="inner cover">
-                    <form name="contact" method="POST" data-netlify-recaptcha="true">
-                        <div class="form-group">
-                            <label for="name">Subject</label>
-                            <input type="text" class="form-control" id="subject" placeholder="Enter subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Your Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter email" required>
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                else.</small>
+                <label id="key"></label>
+<script>
+var key = process.env.SITE_RECAPTCHA_KEY;
+document.getElementById("key").innerHTML = key;
+</script>
+
+                <!-- <div class="inner cover">
+                <form name="contact" method="POST" data-netlify-recaptcha="true">
+                    <div class="form-group">
+                        <label for="name">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Your Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Message</label>
@@ -303,7 +309,7 @@
 
                         </div>
                     </form>
-                </div>
+                </div> -->
             </div>
         </p><br>
     </main>
