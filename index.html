@@ -273,14 +273,9 @@
                 <h1>Contact</h1>
                 <hr id="thinLine">
 
-                <label id="key"></label>
-<script>
-var key = process.env.SITE_RECAPTCHA_KEY;
-document.getElementById("key").innerHTML = key;
-</script>
 
-                <!-- <div class="inner cover">
-                <form name="contact" method="POST" data-netlify-recaptcha="true">
+                <div class="inner cover">
+                <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                     <div class="form-group">
                         <label for="name">Subject</label>
                         <input type="text" class="form-control" id="subject" placeholder="Enter subject">
@@ -302,14 +297,14 @@ document.getElementById("key").innerHTML = key;
                                 required></textarea>
                         </div>
                         <div style="min-height: 100px">
-                            <div style="width: 50%; float: left" class="g-recaptcha" data-sitekey="SITE_RECAPTCHA_KEY">
+                            <div style="width: 50%; float: left" class="g-recaptcha">
                             </div>
 
                             <button type="button" onclick="" class="btn btn-info" style="float: right">Submit</button>
 
                         </div>
                     </form>
-                </div> -->
+                </div>
             </div>
         </p><br>
     </main>
