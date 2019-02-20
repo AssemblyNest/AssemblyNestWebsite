@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/assemblynest.css">
     <link rel="shortcut icon" href="images/icons/pentagon_32x32_3dlogo_transparent_jAZ_icon.ico" type="image/x-icon" />
-    <script src='https://www.google.com/recaptcha/apni.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>AssemblyNest</title>
 </head>
 
@@ -275,7 +275,7 @@
 
 
                 <div class="inner cover">
-                <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                <form  action="?" method="POST" name="contact" data-netlify-recaptcha="true" data-netlify="true">
                     <div class="form-group">
                         <label for="name">Subject</label>
                         <input type="text" class="form-control" id="subject" placeholder="Enter subject">
@@ -297,7 +297,8 @@
                                 required></textarea>
                         </div>
                         <div style="min-height: 100px">
-                            <div style="width: 50%; float: left" class="g-recaptcha" data-sitekey="SITE_RECAPTCHA_KEY">
+                               
+                            <div style="width: 50%; float: left" class="g-recaptcha" data-sitekey="6LcVq5IUAAAAAKHAinYRln8amEcnFFGkVzvyZ03j">
                             </div>
 
                             <button type="button" onclick="" class="btn btn-info" style="float: right">Submit</button>
