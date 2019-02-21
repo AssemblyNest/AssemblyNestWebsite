@@ -281,7 +281,7 @@
                         <br><h1>Contact</h1>
                     <div class="card-body mx-4">
 
-                        <form method="POST" name="contact" data-netlify-recaptcha="true" data-netlify="true">
+                        <form method="POST" action="" name="contact" data-netlify-recaptcha="true" data-netlify="true">
                             <!-- action="?"  -->
                             <p class="hidden">
                                 <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
@@ -308,14 +308,14 @@
                             <div class="md-form">
                                 <i class="fas fa-pencil-alt prefix"></i>
                                 <textarea type="text" id="message" name="message" class="md-textarea form-control"
-                                    rows="5"></textarea>
+                                    rows="5" required></textarea>
                                 <label for="message">Your message</label>
                             </div>
                             
                             <div style="min-height: 100px; text-align: center">
                                     
                                     <div style="text-align: center; text-align: -webkit-center" class="g-recaptcha"
-                                    data-sitekey="6LdszZIUAAAAAK0gMfrZZyeuRDIhV_iVS8X5dVBK">
+                                    data-sitekey="6LdszZIUAAAAAK0gMfrZZyeuRDIhV_iVS8X5dVBK" aria-required="true">
                                 </div>
                                 
                                 <label id="emailHelp">* AssemblyNest will never share your email with anyone.</label><br>
@@ -348,6 +348,7 @@
         </script>, AssemblyNest.
     </footer>
     <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/assemblynest.js"></script>
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
