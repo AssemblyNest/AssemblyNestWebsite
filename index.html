@@ -16,6 +16,7 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="images/icons/pentagon_32x32_3dlogo_transparent_jAZ_icon.ico" type="image/x-icon" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+ 
     <title>AssemblyNest</title>
 </head>
 
@@ -23,7 +24,7 @@
     <header>
 
     </header>
-    <main class="container-fluid" style="padding: 0px">
+    <main class="background">
 
         <!-- 16:9 aspect ratio -->
 
@@ -290,7 +291,7 @@
                             <div class="md-form">
                                 <i class="fas fa-user prefix"></i>
                                 <input type="text" id="name" name="name" class="form-control" required>
-                                <label for="name">Name</label>
+                                <label for="name">Your name</label>
                             </div>
                             <!-- Email input -->
                             <div class="md-form">
@@ -307,14 +308,18 @@
                             <!-- Message input -->
                             <div class="md-form">
                                 <i class="fas fa-pencil-alt prefix"></i>
-                                <textarea type="text" id="message" name="message" class="md-textarea form-control"
-                                    rows="5" required></textarea>
+                                <textarea type="text" id="message" name="message" onkeyup="countChar(this)" class="md-textarea form-control"
+                                    rows="4" maxlength="255" required></textarea>
                                 <label for="message">Your message</label>
+                                <span class="character-counter" id="charNum" style="float: right; font-size: 12px; height: 1px;"></span>
+
                             </div>
+                            <body>
+                              </body>
                     <div style="min-height: 100px; text-align: center">
 
                         <div style="text-align: center; text-align: -webkit-center" class="g-recaptcha"
-                            data-sitekey="6LdszZIUAAAAAK0gMfrZZyeuRDIhV_iVS8X5dVBK" data-callback="enableSubmitBtn">
+                            data-sitekey="6LdszZIUAAAAAK0gMfrZZyeuRDIhV_iVS8X5dVBK" data-callback="enableSubmitBtn" data-theme="dark">
                         </div>
 
                         <label id="emailHelp">* AssemblyNest will never share your email with anyone.</label><br>

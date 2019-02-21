@@ -1,19 +1,27 @@
-p{
+.background {
+    background-color: lightgrey;
+}
+
+p {
     margin-left: 10%;
     margin-right: 10%;
 }
+
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
-.md-form{
-    margin-left: 20%;
-    margin-right: 20%;
-    
+
+.md-form {
+    margin-left: 15%;
+    margin-right: 15%;
 }
-.hidden{
+
+
+.hidden {
     visibility: hidden;
 }
-#emailHelp{
+
+#emailHelp {
     font-size: 0.8em;
     color: crimson;
 }
@@ -44,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 .logoImage {
     height: 90px;
 }
-footer{
+
+footer {
     text-align: center;
 }
