@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/assemblynest.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/assemblynest.css" rel="stylesheet">
+    <!-- favicon -->
     <link rel="shortcut icon" href="images/icons/pentagon_32x32_3dlogo_transparent_jAZ_icon.ico" type="image/x-icon" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>AssemblyNest</title>
@@ -26,7 +32,7 @@
             <source src="Video/backgroundVideo.mp4" type="video/mp4">
         </video>
         <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
                 <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item">
@@ -270,50 +276,65 @@
             facilis!</p>
         <p id="contact">
             <div class="container">
-                <h1>Contact</h1>
-                <hr id="thinLine">
+                
+                <div class="card">
+                        <br><h1>Contact</h1>
+                    <div class="card-body mx-4">
 
-
-                <div class="inner cover">
-                    <form method="POST" name="contact" data-netlify-recaptcha="true" data-netlify="true">
-                        <!-- action="?"  -->
-                        <p class="hidden">
+                        <form method="POST" name="contact" data-netlify-recaptcha="true" data-netlify="true">
+                            <!-- action="?"  -->
+                            <p class="hidden">
                                 <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                              </p>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" class="form-control" id="subject" name="subject"
-                                placeholder="Enter subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name"
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email address</label>
-                            <input type="email" class="form-control" id="email" name="email"
-                                aria-describedby="emailHelp" placeholder="Enter email" required>
-                            <small id="emailHelp">* AssemblyNest will never share your email with anyone
-                                else.</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <div style="min-height: 100px">
-
-                            <div style="width: 50%; float: left" class="g-recaptcha"
-                                data-sitekey="6LdszZIUAAAAAK0gMfrZZyeuRDIhV_iVS8X5dVBK">
+                            </p>
+                            <!-- Name input -->
+                            <div class="md-form">
+                                <i class="fas fa-user prefix"></i>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                                <label for="name">Name</label>
                             </div>
-
-
+                            <!-- Email input -->
+                            <div class="md-form">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                                <label for="email">E-mail address</label>
+                            </div>
+                            <!-- Subject input -->
+                            <div class="md-form">
+                                <i class="fas fa-tag prefix"></i>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                                <label for="subject">Subject</label>
+                            </div>
+                            <!-- Message input -->
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix"></i>
+                                <textarea type="text" id="message" name="message" class="md-textarea form-control"
+                                    rows="5"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
                             
-
-                            <button type="submit" class="btn btn-info" style="float: right">Submit</button>
-
-                        </div>
-                    </form>
+                            <div style="min-height: 100px; text-align: center">
+                                    
+                                    <div style="text-align: center; text-align: -webkit-center" class="g-recaptcha"
+                                    data-sitekey="6LdszZIUAAAAAK0gMfrZZyeuRDIhV_iVS8X5dVBK">
+                                </div>
+                                
+                                <label id="emailHelp">* AssemblyNest will never share your email with anyone.</label><br>
+                            </div>
+                                
+                                <!--Grid row-->
+                                <div class="row d-flex align-items-center mb-3 mt-4">
+    
+                                    <!--Grid column-->
+                                    <div class="col-md-12">
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-grey btn-rounded z-depth-1a">Send</button>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                </div>
+    
+                        </form>
+                    </div>
                 </div>
             </div>
         </p><br>
@@ -326,10 +347,15 @@
             document.write(new Date().getFullYear());
         </script>, AssemblyNest.
     </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
 </body>
 
 </html>

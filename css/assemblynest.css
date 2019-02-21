@@ -1,6 +1,3 @@
-main {
-    background: gray;
-}
 p{
     margin-left: 10%;
     margin-right: 10%;
@@ -8,13 +5,12 @@ p{
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
-#thinLine{
-    background-color: white;
-}
+
 .hidden{
     visibility: hidden;
 }
 #emailHelp{
+    font-size: 0.8em;
     color: crimson;
 }
 
