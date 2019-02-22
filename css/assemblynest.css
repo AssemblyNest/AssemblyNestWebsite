@@ -15,6 +15,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 15%;
     margin-right: 15%;
 }
+.md-form .form-control{
+    margin-bottom: 0;
+}
 
 
 .hidden {

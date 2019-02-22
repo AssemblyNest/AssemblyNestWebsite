@@ -16,7 +16,7 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="images/icons/pentagon_32x32_3dlogo_transparent_jAZ_icon.ico" type="image/x-icon" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
- 
+
     <title>AssemblyNest</title>
 </head>
 
@@ -282,48 +282,51 @@
                     <br>
                     <h1>Contact</h1>
 
-                        <form method="POST" action="#" name="contact" data-netlify-recaptcha="true" data-netlify="true">
-                            <!-- action="?"  -->
-                            <p class="hidden">
-                                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                            </p>
-                            <!-- Name input -->
-                            <div class="md-form">
-                                <i class="fas fa-user prefix"></i>
-                                <input type="text" id="name" name="name" class="form-control" required>
-                                <label for="name">Your name</label>
-                            </div>
-                            <!-- Email input -->
-                            <div class="md-form">
-                                <i class="fas fa-envelope prefix"></i>
-                                <input type="email" id="email" name="email" class="form-control" required>
-                                <label for="email">E-mail address</label>
-                            </div>
-                            <!-- Subject input -->
-                            <div class="md-form">
-                                <i class="fas fa-tag prefix"></i>
-                                <input type="text" id="subject" name="subject" class="form-control" required>
-                                <label for="subject">Subject</label>
-                            </div>
-                            <!-- Message input -->
-                            <div class="md-form">
-                                <i class="fas fa-pencil-alt prefix"></i>
-                                <textarea type="text" id="message" name="message" onkeyup="countChar(this)" class="md-textarea form-control"
-                                    rows="4" maxlength="255" required></textarea>
-                                <label for="message">Your message</label>
-                                <span class="character-counter" id="charNum" style="float: right; font-size: 12px; height: 1px;"></span>
+                    <form method="POST" action="#" name="contact" data-netlify-recaptcha="true" data-netlify="true">
+                        <!-- action="?"  -->
+                        <p class="hidden">
+                            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
+                        <!-- Name input -->
+                        <div class="md-form">
+                            <i class="fas fa-user prefix"></i>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <label for="name">Your name</label>
+                        </div>
+                        <!-- Email input -->
+                        <div class="md-form">
+                            <i class="fas fa-envelope prefix"></i>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <label for="email">E-mail address</label>
+                        </div>
+                        <!-- Subject input -->
+                        <div class="md-form">
+                            <i class="fas fa-tag prefix"></i>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <!-- Message input -->
+                        <div class="md-form">
+                            <i class="fas fa-pencil-alt prefix"></i>
+                            <textarea type="text" id="message" name="message" onkeyup="countChar(this)"
+                                class="md-textarea form-control" rows="4" maxlength="400" required></textarea>
+                            <label for="message">Your message</label>
+                            <span class="character-counter" id="charNum"
+                                style="float: right; font-size: 12px; height: 1px;"></span>
 
-                            </div>
-                            <body>
-                              </body>
-                    <div style="min-height: 100px; text-align: center">
-
-                        <div style="text-align: center; text-align: -webkit-center" class="g-recaptcha"
-                            data-sitekey="6LdszZIUAAAAAK0gMfrZZyeuRDIhV_iVS8X5dVBK" data-callback="enableSubmitBtn" data-theme="dark">
                         </div>
 
-                        <label id="emailHelp">* AssemblyNest will never share your email with anyone.</label><br>
-                    </div>
+                        <body>
+                        </body>
+                        <div style="min-height: 100px; text-align: center; margin-top: 60px;">
+
+                            <div style="text-align: center; text-align: -webkit-center" class="g-recaptcha"
+                                data-sitekey="6LdszZIUAAAAAK0gMfrZZyeuRDIhV_iVS8X5dVBK" data-callback="enableSubmitBtn">
+                                <!-- data-theme="dark" -->
+                            </div>
+
+                            <label id="emailHelp">* AssemblyNest will never share your email with anyone.</label><br>
+                        </div>
 
                         <!--Grid row-->
                         <div class="row d-flex align-items-center mb-3 mt-4">
@@ -338,7 +341,7 @@
                             <!--Grid column-->
                         </div>
 
-                        </form>
+                    </form>
                 </div>
             </div>
         </p><br>
