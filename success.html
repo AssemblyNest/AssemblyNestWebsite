@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/assemblynest.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/icons/pentagon_32x32_3dlogo_transparent_jAZ_icon.ico" type="image/x-icon" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <title>AssemblyNest</title>
+</head>
+
+<body onload="typeWriter()" >
+    <header style="padding:10px">
+
+    </header>
+    <main class="background">
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+                <a class="mx-auto" href="#">
+                    <img class="logoImage" src="images/AssemblyNest_Logo_transparent.png" class="rounded-circle">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+                <ul class="navbar-nav mr-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </main>
+    <div style="background-image: url('./images/3.jpg'); height: 100%; background-position: center;
+                background-repeat: no-repeat; background-size: cover;"></div>
+    <section class="success">
+            <h3 id="msgSent"></h3>
+          <hr id="hrBlueLine">
+          <h4 id="getBack"></h4>
+    </section>
+    <div class="footer">
+        &copy;
+        <script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script>, AssemblyNest.
+    </div>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/assemblynest.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+</html>

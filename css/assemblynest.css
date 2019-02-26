@@ -1,5 +1,28 @@
+html, body {
+    height: 100%;
+}
+
 .background {
+    position: relative;
     background-color: lightgrey;
+}
+
+.success {
+    min-height: 30%;
+    /* Position text in the middle */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    color: #4C76FF;
+    /* AssemblyNest blue*/
+}
+
+#hrBlueLine {
+    background-color: #73FF54;
+    /* AssemblyNest green */
 }
 
 p {
@@ -15,10 +38,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 15%;
     margin-right: 15%;
 }
-.md-form .form-control{
+
+.md-form .form-control {
     margin-bottom: 0;
 }
-
 
 .hidden {
     visibility: hidden;
@@ -57,5 +80,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 footer {
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
     text-align: center;
 }
