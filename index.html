@@ -32,6 +32,7 @@
         <video class="embed-responsive embed-responsive-16by9" autoplay="autoplay" muted="muted" loop="loop">
             <source src="Video/backgroundVideo.mp4" type="video/mp4">
         </video>
+
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
@@ -63,6 +64,7 @@
                 </ul>
             </div>
         </nav>
+
     </main>
     <section class="background">
         <br>
@@ -312,7 +314,7 @@
                         <!-- Message input -->
                         <div class="md-form">
                             <i class="fas fa-pencil-alt prefix"></i>
-                            <textarea type="text" id="message" name="message" onkeyup="countChar(this)"
+                            <textarea class="overflow-auto" type="text" id="message" name="message" onkeyup="countChar(this)"
                                 class="md-textarea form-control" rows="4" maxlength="400" required></textarea>
                             <label for="message">Your message</label>
                             <span class="character-counter" id="charNum"
